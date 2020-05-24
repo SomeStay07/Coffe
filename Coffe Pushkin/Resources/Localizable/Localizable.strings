@@ -1,0 +1,15 @@
+/*
+    Localizable.strings
+    Created by Тимур on 24.05.2020.
+    Copyright © 2020 Тимур Чеберда. All rights reserved.
+*/
+
+// MARK: Tutorial
+
+"WELCOME_PAGE_TITLE" = "Добро пожаловать!";
+"LOCATION_PAGE_TITLE" = "Где мы?";
+"NOTIFICATION_PAGE_TITLE" = "Важные уведомления";
+
+"WELCOME_PAGE_DESCRIPTION" = "Coffe Pushkin уведомит вас об акциях и скидках, расскажет про историю кофе, поможет вам облегчить покупку кофе. Но сначала давайте его немного настроим.";
+"LOCATION_PAGE_DESCRIPTION" = "Очень часто мы устраиваем крупные акции на всю продукцию, разрешите вам узнать где мы, чтобы вы не упустили свою возможность.";
+"NOTIFICATION_PAGE_DESCRIPTION" = "Бывает, что у нас начались акции и скидки, а вы это можете пропустить. Для этого разрешите пуш-уведомления.";
