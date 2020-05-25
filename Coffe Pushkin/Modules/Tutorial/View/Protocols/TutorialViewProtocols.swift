@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol TutorialViewOutput {
-    func viewLoaded()
-}
-
 protocol TutorialViewInput: class {
     func set(viewModels: [CommonPageViewController.ViewModel])
+}
+
+protocol TutorialViewOutput {
+    func viewLoaded()
 }
 
 protocol TutorialViewProtocol: TutorialViewInput {

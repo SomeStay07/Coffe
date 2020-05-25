@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1ECF4E1F24609F5A007174FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4E1E24609F5A007174FE /* AppDelegate.swift */; };
 		1ECF4E2124609F5A007174FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4E2024609F5A007174FE /* SceneDelegate.swift */; };
-		1ECF4E2624609F5A007174FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECF4E2424609F5A007174FE /* Main.storyboard */; };
-		1ECF4E2B24609F5E007174FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ECF4E2924609F5E007174FE /* LaunchScreen.storyboard */; };
 		39577880247ABAD200B8D164 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957787F247ABAD200B8D164 /* Labels.swift */; };
 		39577884247ABB5600B8D164 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39577883247ABB5600B8D164 /* PrimaryButton.swift */; };
 		39577886247ABB6700B8D164 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39577885247ABB6700B8D164 /* Button.swift */; };
@@ -19,6 +17,13 @@
 		3957788F247AC92200B8D164 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3957788E247AC92200B8D164 /* Localizable.strings */; };
 		39577891247ACA6700B8D164 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39577890247ACA6700B8D164 /* Strings.swift */; };
 		39577897247ADB4F00B8D164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39577896247ADB4F00B8D164 /* Assets.xcassets */; };
+		39747FF2247C5629001C3377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39747FF1247C5629001C3377 /* Main.storyboard */; };
+		39747FFC247C5758001C3377 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39747FFB247C5758001C3377 /* ProfileRouter.swift */; };
+		39747FFE247C5763001C3377 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39747FFD247C5763001C3377 /* ProfilePresenter.swift */; };
+		39748001247C5777001C3377 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748000247C5777001C3377 /* ProfileViewController.swift */; };
+		39748003247C5780001C3377 /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748002247C5780001C3377 /* ProfileAssembly.swift */; };
+		39748005247C57BB001C3377 /* ProfileViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748004247C57BB001C3377 /* ProfileViewProtocols.swift */; };
+		39748007247C5874001C3377 /* ProfileRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748006247C5874001C3377 /* ProfileRouterProtocols.swift */; };
 		39ACD9F724799D2D0062E04F /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9F624799D2D0062E04F /* TutorialViewController.swift */; };
 		39ACD9FA24799D540062E04F /* TutorialViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9F924799D540062E04F /* TutorialViewProtocols.swift */; };
 		39ACD9FC2479B77B0062E04F /* CommonPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */; };
@@ -32,11 +37,8 @@
 /* Begin PBXFileReference section */
 		07A9BF5223AB0F76CAD1E8F3 /* Pods-Coffe Pushkin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe Pushkin.debug.xcconfig"; path = "Target Support Files/Pods-Coffe Pushkin/Pods-Coffe Pushkin.debug.xcconfig"; sourceTree = "<group>"; };
 		1ECF4E1B24609F5A007174FE /* Coffe Pushkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe Pushkin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ECF4E1E24609F5A007174FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1ECF4E2024609F5A007174FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1ECF4E2524609F5A007174FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1ECF4E2A24609F5E007174FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1ECF4E2C24609F5E007174FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ECF4E1E24609F5A007174FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Coffe Pushkin/AppDelegate.swift"; sourceTree = "<group>"; };
+		1ECF4E2024609F5A007174FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "/Users/timur/Documents/Coffe Pushkin/Coffe Pushkin/SceneDelegate.swift"; sourceTree = "<absolute>"; };
 		3957787F247ABAD200B8D164 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		39577883247ABB5600B8D164 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		39577885247ABB6700B8D164 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -44,14 +46,22 @@
 		3957788A247AC79E00B8D164 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		3957788E247AC92200B8D164 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		39577890247ACA6700B8D164 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
-		39577896247ADB4F00B8D164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		39577896247ADB4F00B8D164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		39747FEF247C5455001C3377 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Coffe Pushkin/Info.plist"; sourceTree = "<group>"; };
+		39747FF1247C5629001C3377 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		39747FFB247C5758001C3377 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		39747FFD247C5763001C3377 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		39748000247C5777001C3377 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		39748002247C5780001C3377 /* ProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
+		39748004247C57BB001C3377 /* ProfileViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewProtocols.swift; sourceTree = "<group>"; };
+		39748006247C5874001C3377 /* ProfileRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouterProtocols.swift; sourceTree = "<group>"; };
 		39ACD9F624799D2D0062E04F /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		39ACD9F924799D540062E04F /* TutorialViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewProtocols.swift; sourceTree = "<group>"; };
-		39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonPageViewController.swift; sourceTree = "<group>"; };
+		39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommonPageViewController.swift; path = Pages/CommonPageViewController.swift; sourceTree = "<group>"; };
 		39ACD9FE2479BD7A0062E04F /* TutorialPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPresenter.swift; sourceTree = "<group>"; };
 		39ACDA022479BDCE0062E04F /* TutorialAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembly.swift; sourceTree = "<group>"; };
 		39ACDA042479BE2F0062E04F /* TutorialRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialRouter.swift; sourceTree = "<group>"; };
-		39ACDA062479BE5C0062E04F /* TutorialRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialRouterProtocol.swift; sourceTree = "<group>"; };
+		39ACDA062479BE5C0062E04F /* TutorialRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialRouterProtocol.swift; path = ../TutorialRouterProtocol.swift; sourceTree = "<group>"; };
 		55B44B105B2484056782C073 /* Pods_Coffe_Pushkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffe_Pushkin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27BD1DB543CD6C31C0C2749 /* Pods-Coffe Pushkin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe Pushkin.release.xcconfig"; path = "Target Support Files/Pods-Coffe Pushkin/Pods-Coffe Pushkin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +83,7 @@
 			children = (
 				1ECF4E1D24609F5A007174FE /* Coffe Pushkin */,
 				1ECF4E1C24609F5A007174FE /* Products */,
+				3957788C247AC90200B8D164 /* Resources */,
 				922E706DDBA0E3244FB7D334 /* Pods */,
 				619D6065F9CDEEFBDCC9D6CA /* Frameworks */,
 			);
@@ -89,19 +100,15 @@
 		1ECF4E1D24609F5A007174FE /* Coffe Pushkin */ = {
 			isa = PBXGroup;
 			children = (
-				3957788C247AC90200B8D164 /* Resources */,
 				39577887247ABB9B00B8D164 /* Colors */,
 				3957787E247ABAC400B8D164 /* Components */,
 				39ACDA13247A75DD0062E04F /* Enums */,
 				39ACD9F324799CF90062E04F /* Modules */,
-				39577896247ADB4F00B8D164 /* Assets.xcassets */,
 				1ECF4E1E24609F5A007174FE /* AppDelegate.swift */,
 				1ECF4E2024609F5A007174FE /* SceneDelegate.swift */,
-				1ECF4E2424609F5A007174FE /* Main.storyboard */,
-				1ECF4E2924609F5E007174FE /* LaunchScreen.storyboard */,
-				1ECF4E2C24609F5E007174FE /* Info.plist */,
+				39747FEF247C5455001C3377 /* Info.plist */,
 			);
-			path = "Coffe Pushkin";
+			name = "Coffe Pushkin";
 			sourceTree = "<group>";
 		};
 		3957787E247ABAC400B8D164 /* Components */ = {
@@ -111,7 +118,8 @@
 				39577883247ABB5600B8D164 /* PrimaryButton.swift */,
 				39577885247ABB6700B8D164 /* Button.swift */,
 			);
-			path = Components;
+			name = Components;
+			path = "Coffe Pushkin/Components";
 			sourceTree = "<group>";
 		};
 		39577887247ABB9B00B8D164 /* Colors */ = {
@@ -119,13 +127,16 @@
 			children = (
 				39577888247ABBAD00B8D164 /* Colors.swift */,
 			);
-			path = Colors;
+			name = Colors;
+			path = "Coffe Pushkin/Colors";
 			sourceTree = "<group>";
 		};
 		3957788C247AC90200B8D164 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				39577896247ADB4F00B8D164 /* Assets.xcassets */,
 				3957788D247AC90E00B8D164 /* Localizable */,
+				39747FF1247C5629001C3377 /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -138,21 +149,100 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		39747FF3247C56E4001C3377 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				39747FF5247C5702001C3377 /* Assembly */,
+				39747FF4247C56FD001C3377 /* View */,
+				39747FF6247C5708001C3377 /* Interactor */,
+				39747FF7247C570E001C3377 /* Presenter */,
+				39747FF8247C571F001C3377 /* Router */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		39747FF4247C56FD001C3377 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39747FFF247C5769001C3377 /* Porotocols */,
+				39748000247C5777001C3377 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39747FF5247C5702001C3377 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				39748002247C5780001C3377 /* ProfileAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		39747FF6247C5708001C3377 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		39747FF7247C570E001C3377 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				39747FFD247C5763001C3377 /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		39747FF8247C571F001C3377 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				39747FF9247C5737001C3377 /* Protocols */,
+				39747FFB247C5758001C3377 /* ProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		39747FF9247C5737001C3377 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				39748006247C5874001C3377 /* ProfileRouterProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		39747FFA247C573F001C3377 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				39ACDA062479BE5C0062E04F /* TutorialRouterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		39747FFF247C5769001C3377 /* Porotocols */ = {
+			isa = PBXGroup;
+			children = (
+				39748004247C57BB001C3377 /* ProfileViewProtocols.swift */,
+			);
+			path = Porotocols;
+			sourceTree = "<group>";
+		};
 		39ACD9F324799CF90062E04F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				39747FF3247C56E4001C3377 /* Profile */,
 				39ACD9F424799D000062E04F /* Tutorial */,
 			);
-			path = Modules;
+			name = Modules;
+			path = "Coffe Pushkin/Modules";
 			sourceTree = "<group>";
 		};
 		39ACD9F424799D000062E04F /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
 				39ACDA002479BDAE0062E04F /* Assembly */,
+				39ACD9F524799D060062E04F /* View */,
 				39ACD9FD2479BD550062E04F /* Presenter */,
 				39ACDA012479BDB50062E04F /* Router */,
-				39ACD9F524799D060062E04F /* View */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -160,8 +250,8 @@
 		39ACD9F524799D060062E04F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				39ACDA0F2479DA0A0062E04F /* Pages */,
 				39ACD9F824799D450062E04F /* Protocols */,
+				39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */,
 				39ACD9F624799D2D0062E04F /* TutorialViewController.swift */,
 			);
 			path = View;
@@ -194,18 +284,10 @@
 		39ACDA012479BDB50062E04F /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				39747FFA247C573F001C3377 /* Protocols */,
 				39ACDA042479BE2F0062E04F /* TutorialRouter.swift */,
-				39ACDA062479BE5C0062E04F /* TutorialRouterProtocol.swift */,
 			);
 			path = Router;
-			sourceTree = "<group>";
-		};
-		39ACDA0F2479DA0A0062E04F /* Pages */ = {
-			isa = PBXGroup;
-			children = (
-				39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */,
-			);
-			path = Pages;
 			sourceTree = "<group>";
 		};
 		39ACDA13247A75DD0062E04F /* Enums */ = {
@@ -214,7 +296,8 @@
 				3957788A247AC79E00B8D164 /* Fonts.swift */,
 				39577890247ACA6700B8D164 /* Strings.swift */,
 			);
-			path = Enums;
+			name = Enums;
+			path = "Coffe Pushkin/Enums";
 			sourceTree = "<group>";
 		};
 		619D6065F9CDEEFBDCC9D6CA /* Frameworks */ = {
@@ -294,10 +377,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ECF4E2B24609F5E007174FE /* LaunchScreen.storyboard in Resources */,
+				39747FF2247C5629001C3377 /* Main.storyboard in Resources */,
 				3957788F247AC92200B8D164 /* Localizable.strings in Resources */,
 				39577897247ADB4F00B8D164 /* Assets.xcassets in Resources */,
-				1ECF4E2624609F5A007174FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,17 +432,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39747FFC247C5758001C3377 /* ProfileRouter.swift in Sources */,
 				39ACD9FF2479BD7A0062E04F /* TutorialPresenter.swift in Sources */,
 				3957788B247AC79E00B8D164 /* Fonts.swift in Sources */,
 				39577891247ACA6700B8D164 /* Strings.swift in Sources */,
 				39577889247ABBAD00B8D164 /* Colors.swift in Sources */,
 				39577880247ABAD200B8D164 /* Labels.swift in Sources */,
+				39748001247C5777001C3377 /* ProfileViewController.swift in Sources */,
 				39ACDA072479BE5C0062E04F /* TutorialRouterProtocol.swift in Sources */,
 				39577884247ABB5600B8D164 /* PrimaryButton.swift in Sources */,
 				39ACD9FA24799D540062E04F /* TutorialViewProtocols.swift in Sources */,
+				39748005247C57BB001C3377 /* ProfileViewProtocols.swift in Sources */,
 				39577886247ABB6700B8D164 /* Button.swift in Sources */,
+				39747FFE247C5763001C3377 /* ProfilePresenter.swift in Sources */,
 				1ECF4E1F24609F5A007174FE /* AppDelegate.swift in Sources */,
+				39748003247C5780001C3377 /* ProfileAssembly.swift in Sources */,
 				39ACD9F724799D2D0062E04F /* TutorialViewController.swift in Sources */,
+				39748007247C5874001C3377 /* ProfileRouterProtocols.swift in Sources */,
 				39ACDA052479BE2F0062E04F /* TutorialRouter.swift in Sources */,
 				39ACDA032479BDCE0062E04F /* TutorialAssembly.swift in Sources */,
 				1ECF4E2124609F5A007174FE /* SceneDelegate.swift in Sources */,
@@ -369,25 +457,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1ECF4E2424609F5A007174FE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1ECF4E2524609F5A007174FE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1ECF4E2924609F5E007174FE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1ECF4E2A24609F5E007174FE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1ECF4E2D24609F5E007174FE /* Debug */ = {
@@ -513,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 9P8B87J42W;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Coffe Pushkin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
