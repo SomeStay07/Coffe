@@ -32,7 +32,7 @@ final class TutorialPresenter {
 
 extension TutorialPresenter: TutorialViewOutput {
     
-    func viewLoaded() {
+    func viewDidLoad() {
         view?.set(viewModels: makePages())
     }
 }

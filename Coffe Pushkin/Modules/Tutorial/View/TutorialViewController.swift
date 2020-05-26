@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class TutorialViewController: UIPageViewController, TutorialViewProtocol {
+final class TutorialViewController: UIPageViewController, TutorialViewProtocol {
     
     var output: TutorialViewOutput?
     
@@ -26,15 +26,11 @@ class TutorialViewController: UIPageViewController, TutorialViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        output?.viewLoaded()
+        output?.viewDidLoad()
         embedViews()
         setupLayout()
         setupAppearance()
         setupBehaviour()
-    }
-    
-    @objc private func onContinueTap() {
-        onContinueButtonTap?()
     }
     
     //MARK: - init UIPageVC
@@ -50,6 +46,12 @@ class TutorialViewController: UIPageViewController, TutorialViewProtocol {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func onContinueTap() {
+            let viewController = ProfileViewController()
+            ProfileAssembly.assembly(with: viewController)
+            self.present(viewController, animated: true, completion: nil)
     }
 }
 
@@ -98,7 +100,6 @@ private extension TutorialViewController {
     }
     
     func setupAppearance() {
-        
         continueButton.setTitle("Продолжить", for: .normal)
         view.backgroundColor = BasiColors.darkViolet.color
         

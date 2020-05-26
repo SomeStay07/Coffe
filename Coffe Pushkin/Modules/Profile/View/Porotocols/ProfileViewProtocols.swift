@@ -16,6 +16,6 @@ protocol ProfileViewOutput: class {
      func viewDidLoad()
 }
 
-protocol ProfileView: ProfileViewInput {
+protocol ProfileViewProtocol: ProfileViewInput {
     var output: ProfileViewOutput? { get set }
 }

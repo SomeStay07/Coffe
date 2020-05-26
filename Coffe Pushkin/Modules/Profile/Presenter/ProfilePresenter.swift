@@ -23,3 +23,10 @@ final class ProfilePresenter {
         self.router  = router
     }
 }
+
+extension ProfilePresenter: ProfileViewOutput {
+    
+    func viewDidLoad() {
+        
+    }
+}

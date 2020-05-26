@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  CafeViewController.swift
 //  Coffe Pushkin
 //
 //  Created by Тимур on 25.05.2020.
@@ -9,19 +9,15 @@
 import Foundation
 import UIKit
 
-final class ProfileViewController: UIViewController, ProfileViewProtocol {
+final class CafeViewController: UIViewController, CafeViewProtocol {
     
-    var output: ProfileViewOutput?
+    var output: CafeViewOutput?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .yellow
         output?.viewDidLoad()
-        view.backgroundColor = .red
-//        embedViews()
-//        setupLayout()
-//        setupAppearance()
-//        setupBehaviour()
     }
     
     func set() {

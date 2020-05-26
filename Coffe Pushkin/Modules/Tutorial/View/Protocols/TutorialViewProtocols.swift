@@ -13,7 +13,7 @@ protocol TutorialViewInput: class {
 }
 
 protocol TutorialViewOutput {
-    func viewLoaded()
+    func viewDidLoad()
 }
 
 protocol TutorialViewProtocol: TutorialViewInput {

@@ -24,6 +24,13 @@
 		39748003247C5780001C3377 /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748002247C5780001C3377 /* ProfileAssembly.swift */; };
 		39748005247C57BB001C3377 /* ProfileViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748004247C57BB001C3377 /* ProfileViewProtocols.swift */; };
 		39748007247C5874001C3377 /* ProfileRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748006247C5874001C3377 /* ProfileRouterProtocols.swift */; };
+		3974800F247C5DCF001C3377 /* CafeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974800E247C5DCF001C3377 /* CafeAssembly.swift */; };
+		39748012247C5DFB001C3377 /* CafeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748011247C5DFB001C3377 /* CafeViewProtocols.swift */; };
+		39748014247C5E3F001C3377 /* CafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748013247C5E3F001C3377 /* CafeView.swift */; };
+		39748016247C5E48001C3377 /* CafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748015247C5E48001C3377 /* CafeViewController.swift */; };
+		39748018247C5E76001C3377 /* CafePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748017247C5E76001C3377 /* CafePresenter.swift */; };
+		3974801B247C5EE7001C3377 /* CafeRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974801A247C5EE7001C3377 /* CafeRouterProtocols.swift */; };
+		3974801D247C5F32001C3377 /* CafeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974801C247C5F32001C3377 /* CafeRouter.swift */; };
 		39ACD9F724799D2D0062E04F /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9F624799D2D0062E04F /* TutorialViewController.swift */; };
 		39ACD9FA24799D540062E04F /* TutorialViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9F924799D540062E04F /* TutorialViewProtocols.swift */; };
 		39ACD9FC2479B77B0062E04F /* CommonPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */; };
@@ -55,6 +62,13 @@
 		39748002247C5780001C3377 /* ProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
 		39748004247C57BB001C3377 /* ProfileViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewProtocols.swift; sourceTree = "<group>"; };
 		39748006247C5874001C3377 /* ProfileRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouterProtocols.swift; sourceTree = "<group>"; };
+		3974800E247C5DCF001C3377 /* CafeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeAssembly.swift; sourceTree = "<group>"; };
+		39748011247C5DFB001C3377 /* CafeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewProtocols.swift; sourceTree = "<group>"; };
+		39748013247C5E3F001C3377 /* CafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeView.swift; sourceTree = "<group>"; };
+		39748015247C5E48001C3377 /* CafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewController.swift; sourceTree = "<group>"; };
+		39748017247C5E76001C3377 /* CafePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafePresenter.swift; sourceTree = "<group>"; };
+		3974801A247C5EE7001C3377 /* CafeRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRouterProtocols.swift; sourceTree = "<group>"; };
+		3974801C247C5F32001C3377 /* CafeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRouter.swift; sourceTree = "<group>"; };
 		39ACD9F624799D2D0062E04F /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		39ACD9F924799D540062E04F /* TutorialViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewProtocols.swift; sourceTree = "<group>"; };
 		39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommonPageViewController.swift; path = Pages/CommonPageViewController.swift; sourceTree = "<group>"; };
@@ -226,11 +240,82 @@
 			path = Porotocols;
 			sourceTree = "<group>";
 		};
+		39748008247C5D26001C3377 /* Cafe */ = {
+			isa = PBXGroup;
+			children = (
+				3974800C247C5DA2001C3377 /* Assembly */,
+				39748009247C5D94001C3377 /* View */,
+				3974800B247C5D9D001C3377 /* Interactor */,
+				3974800D247C5DA7001C3377 /* Presenter */,
+				3974800A247C5D99001C3377 /* Router */,
+			);
+			path = Cafe;
+			sourceTree = "<group>";
+		};
+		39748009247C5D94001C3377 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39748010247C5DF2001C3377 /* Protocols */,
+				39748013247C5E3F001C3377 /* CafeView.swift */,
+				39748015247C5E48001C3377 /* CafeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3974800A247C5D99001C3377 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				39748019247C5EDB001C3377 /* Protocols */,
+				3974801C247C5F32001C3377 /* CafeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3974800B247C5D9D001C3377 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3974800C247C5DA2001C3377 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3974800E247C5DCF001C3377 /* CafeAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3974800D247C5DA7001C3377 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				39748017247C5E76001C3377 /* CafePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		39748010247C5DF2001C3377 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				39748011247C5DFB001C3377 /* CafeViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		39748019247C5EDB001C3377 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3974801A247C5EE7001C3377 /* CafeRouterProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		39ACD9F324799CF90062E04F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				39747FF3247C56E4001C3377 /* Profile */,
+				39748008247C5D26001C3377 /* Cafe */,
 				39ACD9F424799D000062E04F /* Tutorial */,
+				39747FF3247C56E4001C3377 /* Profile */,
 			);
 			name = Modules;
 			path = "Coffe Pushkin/Modules";
@@ -432,8 +517,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39748012247C5DFB001C3377 /* CafeViewProtocols.swift in Sources */,
 				39747FFC247C5758001C3377 /* ProfileRouter.swift in Sources */,
 				39ACD9FF2479BD7A0062E04F /* TutorialPresenter.swift in Sources */,
+				3974801D247C5F32001C3377 /* CafeRouter.swift in Sources */,
 				3957788B247AC79E00B8D164 /* Fonts.swift in Sources */,
 				39577891247ACA6700B8D164 /* Strings.swift in Sources */,
 				39577889247ABBAD00B8D164 /* Colors.swift in Sources */,
@@ -441,13 +528,18 @@
 				39748001247C5777001C3377 /* ProfileViewController.swift in Sources */,
 				39ACDA072479BE5C0062E04F /* TutorialRouterProtocol.swift in Sources */,
 				39577884247ABB5600B8D164 /* PrimaryButton.swift in Sources */,
+				39748016247C5E48001C3377 /* CafeViewController.swift in Sources */,
 				39ACD9FA24799D540062E04F /* TutorialViewProtocols.swift in Sources */,
+				39748014247C5E3F001C3377 /* CafeView.swift in Sources */,
+				3974801B247C5EE7001C3377 /* CafeRouterProtocols.swift in Sources */,
 				39748005247C57BB001C3377 /* ProfileViewProtocols.swift in Sources */,
 				39577886247ABB6700B8D164 /* Button.swift in Sources */,
 				39747FFE247C5763001C3377 /* ProfilePresenter.swift in Sources */,
 				1ECF4E1F24609F5A007174FE /* AppDelegate.swift in Sources */,
+				39748018247C5E76001C3377 /* CafePresenter.swift in Sources */,
 				39748003247C5780001C3377 /* ProfileAssembly.swift in Sources */,
 				39ACD9F724799D2D0062E04F /* TutorialViewController.swift in Sources */,
+				3974800F247C5DCF001C3377 /* CafeAssembly.swift in Sources */,
 				39748007247C5874001C3377 /* ProfileRouterProtocols.swift in Sources */,
 				39ACDA052479BE2F0062E04F /* TutorialRouter.swift in Sources */,
 				39ACDA032479BDCE0062E04F /* TutorialAssembly.swift in Sources */,
