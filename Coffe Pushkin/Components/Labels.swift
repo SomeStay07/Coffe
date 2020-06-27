@@ -8,67 +8,122 @@
 
 import UIKit
 
-public class LabelTitle1: UILabel {
-    override public init(frame: CGRect) {
+class TitleExtraLargeLabel: UILabel {
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        font = Fonts.title1.font
+        font = Fonts.titleExtraLarge.font
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-public class LabelTitle2: UILabel {
-    override public init(frame: CGRect) {
+class TitleLargeLabel: UILabel {
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        font = Fonts.title2.font
+        font = Fonts.titleLarge.font
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-public class LabelTitle3: UILabel {
-    override public init(frame: CGRect) {
+class SubtitleLargeLabel: UILabel {
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        font = Fonts.title3.font
+        font = Fonts.subtitleLarge.font
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-public class LabelCaption1: UILabel {
-    override public init(frame: CGRect) {
+class TitleLabel: UILabel {
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        font = Fonts.caption1.font
+        font = Fonts.title.font
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-public class LabelCaption2: UILabel {
-    override public init(frame: CGRect) {
+class SubtitleLabel: UILabel {
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        font = Fonts.caption2.font
+        font = Fonts.subtitle.font
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-class LabelCaption3: UILabel {
-    override public init(frame: CGRect) {
+class HeadlineLabel: UILabel {
+    override init(frame: CGRect) {
         super.init(frame: frame)
-        font = Fonts.caption3.font
+        font = Fonts.headline.font
     }
-    
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+class BodyLabel: UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        font = Fonts.body.font
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+class HeadlineSmallLabel: UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        font = Fonts.headlineSmall.font
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+class BodySmallLabel: UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        font = Fonts.bodySmall.font
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+class CaptionLabel: UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        font = Fonts.caption.font
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+class FootnoteLabel: UILabel {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        font = Fonts.footnote.font
+    }
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

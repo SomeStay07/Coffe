@@ -9,13 +9,22 @@
 import Foundation
 
 protocol ProfileViewInput: class {
-   func set()
+    func set(state: ProfileViewState)
 }
 
 protocol ProfileViewOutput: class {
-     func viewDidLoad()
+    func viewLoaded()
+    func viewWillAppear()
+    func viewDidAppear()
 }
 
 protocol ProfileViewProtocol: ProfileViewInput {
     var output: ProfileViewOutput? { get set }
+}
+
+enum ProfileViewState {
+    case hasData([CouponCollectionCell.ViewModel])
+    case noData
+    case error
+    case loading
 }

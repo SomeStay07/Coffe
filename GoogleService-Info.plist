@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>68251638931-asvsvq7l7lf2fkf2175gqkbeiossld1e.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.68251638931-asvsvq7l7lf2fkf2175gqkbeiossld1e</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD_decZG0XImiqbI-59JA9ebs7HpOdIM-M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>68251638931</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>cheberda.timur.Coffe-Pushkin</string>
+	<key>PROJECT_ID</key>
+	<string>coffee-e7f16</string>
+	<key>STORAGE_BUCKET</key>
+	<string>coffee-e7f16.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:68251638931:ios:626272c40d99e52cf40166</string>
+	<key>DATABASE_URL</key>
+	<string>https://coffee-e7f16.firebaseio.com</string>
+</dict>
+</plist>

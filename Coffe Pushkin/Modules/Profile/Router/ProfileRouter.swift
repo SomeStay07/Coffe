@@ -9,8 +9,8 @@
 import Foundation
 
 final class ProfileRouter: ProfileRouterInput {
-    
-    func dismiss(onClose: (() -> ())?) {
-        
+
+    func dismiss(onClose: (() -> Void)?) {
+
     }
 }

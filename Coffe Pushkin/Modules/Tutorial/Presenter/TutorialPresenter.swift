@@ -10,18 +10,18 @@ import Foundation
 import UIKit
 
 final class TutorialPresenter {
-    
+
     // MARK: Components
-    
+
     private weak var view: TutorialViewInput?
-    
+
     private let router: TutorialRouterInput
-    
+
     // MARK: Init
-    
+
     init(
-        view    : TutorialViewInput,
-        router  : TutorialRouterInput
+        view  : TutorialViewInput,
+        router: TutorialRouterInput
     ) {
         self.view    = view
         self.router  = router
@@ -31,14 +31,14 @@ final class TutorialPresenter {
 // MARK: CinemaNoticeViewOutput
 
 extension TutorialPresenter: TutorialViewOutput {
-    
+
     func viewDidLoad() {
         view?.set(viewModels: makePages())
     }
 }
 
 private extension TutorialPresenter {
-    
+
     func buildPage(
         _ image: UIImage,
         _ title: String,
@@ -50,27 +50,33 @@ private extension TutorialPresenter {
             message: description
         )
     }
-    
+
     func makePages() -> [CommonPageViewController.ViewModel] {
-        
-        let welcomePage  = buildPage(
-            #imageLiteral(resourceName: "coffe"),
-            Strings.Tutorial.WelcomePage.title.localized,
-            Strings.Tutorial.WelcomePage.description.localized
+
+        let firstTutorial  = buildPage(
+            Images.Templates.coffee.image,
+            Strings.FirstTutorial.title.localized,
+            Strings.FirstTutorial.description.localized
         )
-        
-        let locationPagee = buildPage(
-            #imageLiteral(resourceName: "ufo"),
-            Strings.Tutorial.LocationPage.title.localized,
-            Strings.Tutorial.LocationPage.description.localized
+
+        let secondTutorial = buildPage(
+            Images.Templates.shop.image,
+            Strings.SecondTutorial.title.localized,
+            Strings.SecondTutorial.description.localized
         )
-        
-        let notificationPage = buildPage(
-            #imageLiteral(resourceName: "push"),
-            Strings.Tutorial.NotificationPage.title.localized,
-            Strings.Tutorial.NotificationPage.description.localized
+
+        let thirdTutorial = buildPage(
+            Images.Templates.ufo.image,
+            Strings.ThirdTutorial.title.localized,
+            Strings.ThirdTutorial.description.localized
         )
-        
-        return [welcomePage, locationPagee, notificationPage]
+
+        let fourthTutorial = buildPage(
+            Images.Templates.bubbleTea.image,
+            Strings.FourthTutorial.title.localized,
+            Strings.FourthTutorial.description.localized
+        )
+
+        return [firstTutorial, secondTutorial, thirdTutorial, fourthTutorial]
     }
 }

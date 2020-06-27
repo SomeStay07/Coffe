@@ -9,5 +9,5 @@
 import Foundation
 
 protocol TutorialRouterInput: class {
-    func dismiss(onClose: (() -> ())?)
+    func showSplashScreen()
 }

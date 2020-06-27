@@ -6,12 +6,10 @@
 //  Copyright © 2020 Тимур Чеберда. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class TutorialRouter: TutorialRouterInput {
-    
-    
-    func dismiss(onClose: (() -> ())?) {
-        
+
+    func showSplashScreen() {
     }
 }

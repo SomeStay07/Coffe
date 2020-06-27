@@ -9,7 +9,7 @@
 import Foundation
 
 final class TutorialAssembly {
-    
+
     static func assembly(with view: TutorialViewProtocol) {
         view.output = TutorialPresenter(
             view: view,

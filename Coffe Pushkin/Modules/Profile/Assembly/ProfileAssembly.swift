@@ -9,7 +9,7 @@
 import Foundation
 
 final class ProfileAssembly {
-    
+
     static func assembly(with view: ProfileViewProtocol) {
         view.output = ProfilePresenter(
             view: view,

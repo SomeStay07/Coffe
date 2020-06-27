@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1ECF4E1F24609F5A007174FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4E1E24609F5A007174FE /* AppDelegate.swift */; };
 		1ECF4E2124609F5A007174FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4E2024609F5A007174FE /* SceneDelegate.swift */; };
+		3931A76724857DB600CA7FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3931A76624857DB600CA7FFD /* GoogleService-Info.plist */; };
 		39577880247ABAD200B8D164 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957787F247ABAD200B8D164 /* Labels.swift */; };
 		39577884247ABB5600B8D164 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39577883247ABB5600B8D164 /* PrimaryButton.swift */; };
 		39577886247ABB6700B8D164 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39577885247ABB6700B8D164 /* Button.swift */; };
@@ -17,6 +18,12 @@
 		3957788F247AC92200B8D164 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3957788E247AC92200B8D164 /* Localizable.strings */; };
 		39577891247ACA6700B8D164 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39577890247ACA6700B8D164 /* Strings.swift */; };
 		39577897247ADB4F00B8D164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39577896247ADB4F00B8D164 /* Assets.xcassets */; };
+		3958558E24992430002210B9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958558D24992430002210B9 /* SplashViewController.swift */; };
+		39585595249926F7002210B9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39585594249926F7002210B9 /* RootViewController.swift */; };
+		3958559B24992C5C002210B9 /* TabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958559A24992C5C002210B9 /* TabBarAssembly.swift */; };
+		3958559E249937E7002210B9 /* RootAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958559D249937E7002210B9 /* RootAssembly.swift */; };
+		395855A0249947F1002210B9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958559F249947F1002210B9 /* Images.swift */; };
+		395855A22499530F002210B9 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395855A12499530F002210B9 /* Appearance.swift */; };
 		39747FF2247C5629001C3377 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39747FF1247C5629001C3377 /* Main.storyboard */; };
 		39747FFC247C5758001C3377 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39747FFB247C5758001C3377 /* ProfileRouter.swift */; };
 		39747FFE247C5763001C3377 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39747FFD247C5763001C3377 /* ProfilePresenter.swift */; };
@@ -24,13 +31,25 @@
 		39748003247C5780001C3377 /* ProfileAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748002247C5780001C3377 /* ProfileAssembly.swift */; };
 		39748005247C57BB001C3377 /* ProfileViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748004247C57BB001C3377 /* ProfileViewProtocols.swift */; };
 		39748007247C5874001C3377 /* ProfileRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748006247C5874001C3377 /* ProfileRouterProtocols.swift */; };
-		3974800F247C5DCF001C3377 /* CafeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974800E247C5DCF001C3377 /* CafeAssembly.swift */; };
-		39748012247C5DFB001C3377 /* CafeViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748011247C5DFB001C3377 /* CafeViewProtocols.swift */; };
-		39748014247C5E3F001C3377 /* CafeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748013247C5E3F001C3377 /* CafeView.swift */; };
+		3974800F247C5DCF001C3377 /* CafeFeedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974800E247C5DCF001C3377 /* CafeFeedAssembly.swift */; };
+		39748012247C5DFB001C3377 /* CafeFeedViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748011247C5DFB001C3377 /* CafeFeedViewProtocols.swift */; };
+		39748014247C5E3F001C3377 /* CafeFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748013247C5E3F001C3377 /* CafeFeedView.swift */; };
 		39748016247C5E48001C3377 /* CafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748015247C5E48001C3377 /* CafeViewController.swift */; };
-		39748018247C5E76001C3377 /* CafePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748017247C5E76001C3377 /* CafePresenter.swift */; };
-		3974801B247C5EE7001C3377 /* CafeRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974801A247C5EE7001C3377 /* CafeRouterProtocols.swift */; };
-		3974801D247C5F32001C3377 /* CafeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974801C247C5F32001C3377 /* CafeRouter.swift */; };
+		39748018247C5E76001C3377 /* CafeFeedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39748017247C5E76001C3377 /* CafeFeedPresenter.swift */; };
+		3974801B247C5EE7001C3377 /* CafeFeedRouterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974801A247C5EE7001C3377 /* CafeFeedRouterProtocols.swift */; };
+		3974801D247C5F32001C3377 /* CafeFeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974801C247C5F32001C3377 /* CafeFeedRouter.swift */; };
+		3989D083249B50F00036119D /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D082249B50F00036119D /* ChildViewController.swift */; };
+		3989D086249B52E90036119D /* PanelTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D085249B52E90036119D /* PanelTransition.swift */; };
+		3989D088249B53240036119D /* TransitionDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D087249B53240036119D /* TransitionDriver.swift */; };
+		3989D08C249B53DB0036119D /* TransitionDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D08B249B53DB0036119D /* TransitionDirection.swift */; };
+		3989D08E249B55BA0036119D /* CGPoint+Velocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D08D249B55BA0036119D /* CGPoint+Velocity.swift */; };
+		3989D091249B56A30036119D /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D090249B56A30036119D /* PresentationController.swift */; };
+		3989D093249B5C710036119D /* DimmPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D092249B5C710036119D /* DimmPresentationController.swift */; };
+		3989D096249B5EA30036119D /* PresentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D095249B5EA30036119D /* PresentAnimation.swift */; };
+		3989D098249B60130036119D /* DismissAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D097249B60130036119D /* DismissAnimation.swift */; };
+		3989D09A249B6F5E0036119D /* UIVIewController+TransitionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3989D099249B6F5E0036119D /* UIVIewController+TransitionCoordinator.swift */; };
+		39906D2724995893006BE63F /* UIImage+withColorAndSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39906D2624995893006BE63F /* UIImage+withColorAndSize.swift */; };
+		39906D29249958CA006BE63F /* UIImage+shadowImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39906D28249958CA006BE63F /* UIImage+shadowImage.swift */; };
 		39ACD9F724799D2D0062E04F /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9F624799D2D0062E04F /* TutorialViewController.swift */; };
 		39ACD9FA24799D540062E04F /* TutorialViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9F924799D540062E04F /* TutorialViewProtocols.swift */; };
 		39ACD9FC2479B77B0062E04F /* CommonPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */; };
@@ -38,6 +57,13 @@
 		39ACDA032479BDCE0062E04F /* TutorialAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACDA022479BDCE0062E04F /* TutorialAssembly.swift */; };
 		39ACDA052479BE2F0062E04F /* TutorialRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACDA042479BE2F0062E04F /* TutorialRouter.swift */; };
 		39ACDA072479BE5C0062E04F /* TutorialRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39ACDA062479BE5C0062E04F /* TutorialRouterProtocol.swift */; };
+		39CB09EF24844EB00049EB4F /* ScrollingCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CB09EE24844EB00049EB4F /* ScrollingCollectionViewFlowLayout.swift */; };
+		39D64EEB2482963400E6838E /* CouponCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D64EEA2482963400E6838E /* CouponCollectionCell.swift */; };
+		39F98EDD249A21E100A4D96B /* UIViewController+Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F98EDC249A21E100A4D96B /* UIViewController+Wrap.swift */; };
+		39F98EE1249A7A1000A4D96B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F98EE0249A7A1000A4D96B /* ErrorView.swift */; };
+		39F98EE4249A7E7500A4D96B /* CafeFeedInteractorProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F98EE3249A7E7500A4D96B /* CafeFeedInteractorProtocols.swift */; };
+		39F98EE6249A82BE00A4D96B /* CafeFeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F98EE5249A82BE00A4D96B /* CafeFeedInteractor.swift */; };
+		39F98EE8249A956F00A4D96B /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F98EE7249A956F00A4D96B /* ToastView.swift */; };
 		EAD3889B7398492622C42907 /* Pods_Coffe_Pushkin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B44B105B2484056782C073 /* Pods_Coffe_Pushkin.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +72,7 @@
 		1ECF4E1B24609F5A007174FE /* Coffe Pushkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe Pushkin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECF4E1E24609F5A007174FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Coffe Pushkin/AppDelegate.swift"; sourceTree = "<group>"; };
 		1ECF4E2024609F5A007174FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "/Users/timur/Documents/Coffe Pushkin/Coffe Pushkin/SceneDelegate.swift"; sourceTree = "<absolute>"; };
+		3931A76624857DB600CA7FFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3957787F247ABAD200B8D164 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		39577883247ABB5600B8D164 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		39577885247ABB6700B8D164 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -54,6 +81,12 @@
 		3957788E247AC92200B8D164 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		39577890247ACA6700B8D164 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		39577896247ADB4F00B8D164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		3958558D24992430002210B9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		39585594249926F7002210B9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		3958559A24992C5C002210B9 /* TabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembly.swift; sourceTree = "<group>"; };
+		3958559D249937E7002210B9 /* RootAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootAssembly.swift; sourceTree = "<group>"; };
+		3958559F249947F1002210B9 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		395855A12499530F002210B9 /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		39747FEF247C5455001C3377 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Coffe Pushkin/Info.plist"; sourceTree = "<group>"; };
 		39747FF1247C5629001C3377 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		39747FFB247C5758001C3377 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
@@ -62,13 +95,25 @@
 		39748002247C5780001C3377 /* ProfileAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAssembly.swift; sourceTree = "<group>"; };
 		39748004247C57BB001C3377 /* ProfileViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewProtocols.swift; sourceTree = "<group>"; };
 		39748006247C5874001C3377 /* ProfileRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouterProtocols.swift; sourceTree = "<group>"; };
-		3974800E247C5DCF001C3377 /* CafeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeAssembly.swift; sourceTree = "<group>"; };
-		39748011247C5DFB001C3377 /* CafeViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewProtocols.swift; sourceTree = "<group>"; };
-		39748013247C5E3F001C3377 /* CafeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeView.swift; sourceTree = "<group>"; };
+		3974800E247C5DCF001C3377 /* CafeFeedAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFeedAssembly.swift; sourceTree = "<group>"; };
+		39748011247C5DFB001C3377 /* CafeFeedViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFeedViewProtocols.swift; sourceTree = "<group>"; };
+		39748013247C5E3F001C3377 /* CafeFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFeedView.swift; sourceTree = "<group>"; };
 		39748015247C5E48001C3377 /* CafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewController.swift; sourceTree = "<group>"; };
-		39748017247C5E76001C3377 /* CafePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafePresenter.swift; sourceTree = "<group>"; };
-		3974801A247C5EE7001C3377 /* CafeRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRouterProtocols.swift; sourceTree = "<group>"; };
-		3974801C247C5F32001C3377 /* CafeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeRouter.swift; sourceTree = "<group>"; };
+		39748017247C5E76001C3377 /* CafeFeedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFeedPresenter.swift; sourceTree = "<group>"; };
+		3974801A247C5EE7001C3377 /* CafeFeedRouterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFeedRouterProtocols.swift; sourceTree = "<group>"; };
+		3974801C247C5F32001C3377 /* CafeFeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFeedRouter.swift; sourceTree = "<group>"; };
+		3989D082249B50F00036119D /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		3989D085249B52E90036119D /* PanelTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelTransition.swift; sourceTree = "<group>"; };
+		3989D087249B53240036119D /* TransitionDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDriver.swift; sourceTree = "<group>"; };
+		3989D08B249B53DB0036119D /* TransitionDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionDirection.swift; sourceTree = "<group>"; };
+		3989D08D249B55BA0036119D /* CGPoint+Velocity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Velocity.swift"; sourceTree = "<group>"; };
+		3989D090249B56A30036119D /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		3989D092249B5C710036119D /* DimmPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimmPresentationController.swift; sourceTree = "<group>"; };
+		3989D095249B5EA30036119D /* PresentAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAnimation.swift; sourceTree = "<group>"; };
+		3989D097249B60130036119D /* DismissAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissAnimation.swift; sourceTree = "<group>"; };
+		3989D099249B6F5E0036119D /* UIVIewController+TransitionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+TransitionCoordinator.swift"; sourceTree = "<group>"; };
+		39906D2624995893006BE63F /* UIImage+withColorAndSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+withColorAndSize.swift"; sourceTree = "<group>"; };
+		39906D28249958CA006BE63F /* UIImage+shadowImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+shadowImage.swift"; sourceTree = "<group>"; };
 		39ACD9F624799D2D0062E04F /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		39ACD9F924799D540062E04F /* TutorialViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewProtocols.swift; sourceTree = "<group>"; };
 		39ACD9FB2479B77B0062E04F /* CommonPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommonPageViewController.swift; path = Pages/CommonPageViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +121,13 @@
 		39ACDA022479BDCE0062E04F /* TutorialAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembly.swift; sourceTree = "<group>"; };
 		39ACDA042479BE2F0062E04F /* TutorialRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialRouter.swift; sourceTree = "<group>"; };
 		39ACDA062479BE5C0062E04F /* TutorialRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TutorialRouterProtocol.swift; path = ../TutorialRouterProtocol.swift; sourceTree = "<group>"; };
+		39CB09EE24844EB00049EB4F /* ScrollingCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		39D64EEA2482963400E6838E /* CouponCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponCollectionCell.swift; sourceTree = "<group>"; };
+		39F98EDC249A21E100A4D96B /* UIViewController+Wrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Wrap.swift"; sourceTree = "<group>"; };
+		39F98EE0249A7A1000A4D96B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		39F98EE3249A7E7500A4D96B /* CafeFeedInteractorProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFeedInteractorProtocols.swift; sourceTree = "<group>"; };
+		39F98EE5249A82BE00A4D96B /* CafeFeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeFeedInteractor.swift; sourceTree = "<group>"; };
+		39F98EE7249A956F00A4D96B /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		55B44B105B2484056782C073 /* Pods_Coffe_Pushkin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffe_Pushkin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27BD1DB543CD6C31C0C2749 /* Pods-Coffe Pushkin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe Pushkin.release.xcconfig"; path = "Target Support Files/Pods-Coffe Pushkin/Pods-Coffe Pushkin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,13 +166,20 @@
 		1ECF4E1D24609F5A007174FE /* Coffe Pushkin */ = {
 			isa = PBXGroup;
 			children = (
-				39577887247ABB9B00B8D164 /* Colors */,
+				396E44CA249E656500E9F7EC /* Helpers */,
+				3989D080249B50D10036119D /* FluidTransition */,
+				396E44C9249E654D00E9F7EC /* Theme */,
+				39F98EDF249A7A0400A4D96B /* Custom Views */,
+				39F98EDE249A339900A4D96B /* ViewControllers */,
+				39585587249903FA002210B9 /* Configurators */,
 				3957787E247ABAC400B8D164 /* Components */,
+				39906D252499586B006BE63F /* Extension */,
 				39ACDA13247A75DD0062E04F /* Enums */,
 				39ACD9F324799CF90062E04F /* Modules */,
 				1ECF4E1E24609F5A007174FE /* AppDelegate.swift */,
 				1ECF4E2024609F5A007174FE /* SceneDelegate.swift */,
 				39747FEF247C5455001C3377 /* Info.plist */,
+				3931A76624857DB600CA7FFD /* GoogleService-Info.plist */,
 			);
 			name = "Coffe Pushkin";
 			sourceTree = "<group>";
@@ -141,8 +200,7 @@
 			children = (
 				39577888247ABBAD00B8D164 /* Colors.swift */,
 			);
-			name = Colors;
-			path = "Coffe Pushkin/Colors";
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		3957788C247AC90200B8D164 /* Resources */ = {
@@ -163,6 +221,63 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		39585587249903FA002210B9 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				3958559A24992C5C002210B9 /* TabBarAssembly.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		3958558F2499259B002210B9 /* RootModule */ = {
+			isa = PBXGroup;
+			children = (
+				3958559C249937DB002210B9 /* Assembly */,
+				39585596249927D9002210B9 /* View */,
+				39585594249926F7002210B9 /* RootViewController.swift */,
+			);
+			path = RootModule;
+			sourceTree = "<group>";
+		};
+		39585596249927D9002210B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				39585597249927EE002210B9 /* Protocols */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		39585597249927EE002210B9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3958559C249937DB002210B9 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3958559D249937E7002210B9 /* RootAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		396E44C9249E654D00E9F7EC /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				39577887247ABB9B00B8D164 /* Colors */,
+				395855A12499530F002210B9 /* Appearance.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		396E44CA249E656500E9F7EC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		39747FF3247C56E4001C3377 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +295,8 @@
 			children = (
 				39747FFF247C5769001C3377 /* Porotocols */,
 				39748000247C5777001C3377 /* ProfileViewController.swift */,
+				39CB09EE24844EB00049EB4F /* ScrollingCollectionViewFlowLayout.swift */,
+				39D64EEA2482963400E6838E /* CouponCollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,7 +357,7 @@
 			path = Porotocols;
 			sourceTree = "<group>";
 		};
-		39748008247C5D26001C3377 /* Cafe */ = {
+		39748008247C5D26001C3377 /* CafeFeed */ = {
 			isa = PBXGroup;
 			children = (
 				3974800C247C5DA2001C3377 /* Assembly */,
@@ -249,14 +366,14 @@
 				3974800D247C5DA7001C3377 /* Presenter */,
 				3974800A247C5D99001C3377 /* Router */,
 			);
-			path = Cafe;
+			path = CafeFeed;
 			sourceTree = "<group>";
 		};
 		39748009247C5D94001C3377 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				39748010247C5DF2001C3377 /* Protocols */,
-				39748013247C5E3F001C3377 /* CafeView.swift */,
+				39748013247C5E3F001C3377 /* CafeFeedView.swift */,
 				39748015247C5E48001C3377 /* CafeViewController.swift */,
 			);
 			path = View;
@@ -266,7 +383,7 @@
 			isa = PBXGroup;
 			children = (
 				39748019247C5EDB001C3377 /* Protocols */,
-				3974801C247C5F32001C3377 /* CafeRouter.swift */,
+				3974801C247C5F32001C3377 /* CafeFeedRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -274,6 +391,8 @@
 		3974800B247C5D9D001C3377 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				39F98EE2249A7E4600A4D96B /* Protocols */,
+				39F98EE5249A82BE00A4D96B /* CafeFeedInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -281,7 +400,7 @@
 		3974800C247C5DA2001C3377 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
-				3974800E247C5DCF001C3377 /* CafeAssembly.swift */,
+				3974800E247C5DCF001C3377 /* CafeFeedAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -289,7 +408,7 @@
 		3974800D247C5DA7001C3377 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				39748017247C5E76001C3377 /* CafePresenter.swift */,
+				39748017247C5E76001C3377 /* CafeFeedPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -297,7 +416,7 @@
 		39748010247C5DF2001C3377 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				39748011247C5DFB001C3377 /* CafeViewProtocols.swift */,
+				39748011247C5DFB001C3377 /* CafeFeedViewProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -305,15 +424,75 @@
 		39748019247C5EDB001C3377 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				3974801A247C5EE7001C3377 /* CafeRouterProtocols.swift */,
+				3974801A247C5EE7001C3377 /* CafeFeedRouterProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3989D080249B50D10036119D /* FluidTransition */ = {
+			isa = PBXGroup;
+			children = (
+				3989D084249B52D70036119D /* Transition */,
+				3989D081249B50E20036119D /* Controllers */,
+			);
+			path = FluidTransition;
+			sourceTree = "<group>";
+		};
+		3989D081249B50E20036119D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3989D082249B50F00036119D /* ChildViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3989D084249B52D70036119D /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				3989D08F249B56930036119D /* Presentation controller */,
+				3989D094249B5E9A0036119D /* Animations */,
+				3989D085249B52E90036119D /* PanelTransition.swift */,
+				3989D087249B53240036119D /* TransitionDriver.swift */,
+				3989D08B249B53DB0036119D /* TransitionDirection.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		3989D08F249B56930036119D /* Presentation controller */ = {
+			isa = PBXGroup;
+			children = (
+				3989D090249B56A30036119D /* PresentationController.swift */,
+				3989D092249B5C710036119D /* DimmPresentationController.swift */,
+			);
+			path = "Presentation controller";
+			sourceTree = "<group>";
+		};
+		3989D094249B5E9A0036119D /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				3989D095249B5EA30036119D /* PresentAnimation.swift */,
+				3989D097249B60130036119D /* DismissAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		39906D252499586B006BE63F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39906D2624995893006BE63F /* UIImage+withColorAndSize.swift */,
+				39906D28249958CA006BE63F /* UIImage+shadowImage.swift */,
+				39F98EDC249A21E100A4D96B /* UIViewController+Wrap.swift */,
+				3989D08D249B55BA0036119D /* CGPoint+Velocity.swift */,
+				3989D099249B6F5E0036119D /* UIVIewController+TransitionCoordinator.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		39ACD9F324799CF90062E04F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				39748008247C5D26001C3377 /* Cafe */,
+				3958558F2499259B002210B9 /* RootModule */,
+				39748008247C5D26001C3377 /* CafeFeed */,
 				39ACD9F424799D000062E04F /* Tutorial */,
 				39747FF3247C56E4001C3377 /* Profile */,
 			);
@@ -380,9 +559,35 @@
 			children = (
 				3957788A247AC79E00B8D164 /* Fonts.swift */,
 				39577890247ACA6700B8D164 /* Strings.swift */,
+				3958559F249947F1002210B9 /* Images.swift */,
 			);
 			name = Enums;
 			path = "Coffe Pushkin/Enums";
+			sourceTree = "<group>";
+		};
+		39F98EDE249A339900A4D96B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3958558D24992430002210B9 /* SplashViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		39F98EDF249A7A0400A4D96B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				39F98EE0249A7A1000A4D96B /* ErrorView.swift */,
+				39F98EE7249A956F00A4D96B /* ToastView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		39F98EE2249A7E4600A4D96B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				39F98EE3249A7E7500A4D96B /* CafeFeedInteractorProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		619D6065F9CDEEFBDCC9D6CA /* Frameworks */ = {
@@ -409,6 +614,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1ECF4E2F24609F5E007174FE /* Build configuration list for PBXNativeTarget "Coffe Pushkin" */;
 			buildPhases = (
+				39D85C062496714A00D0CADE /* ShellScript */,
 				C376332BBFF1FB972CD37636 /* [CP] Check Pods Manifest.lock */,
 				1ECF4E1724609F5A007174FE /* Sources */,
 				1ECF4E1824609F5A007174FE /* Frameworks */,
@@ -463,6 +669,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39747FF2247C5629001C3377 /* Main.storyboard in Resources */,
+				3931A76724857DB600CA7FFD /* GoogleService-Info.plist in Resources */,
 				3957788F247AC92200B8D164 /* Localizable.strings in Resources */,
 				39577897247ADB4F00B8D164 /* Assets.xcassets in Resources */,
 			);
@@ -471,6 +678,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		39D85C062496714A00D0CADE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
 		3E0D36E3B30ABC981D961C01 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -517,34 +741,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39748012247C5DFB001C3377 /* CafeViewProtocols.swift in Sources */,
+				39748012247C5DFB001C3377 /* CafeFeedViewProtocols.swift in Sources */,
 				39747FFC247C5758001C3377 /* ProfileRouter.swift in Sources */,
+				3989D093249B5C710036119D /* DimmPresentationController.swift in Sources */,
 				39ACD9FF2479BD7A0062E04F /* TutorialPresenter.swift in Sources */,
-				3974801D247C5F32001C3377 /* CafeRouter.swift in Sources */,
+				3974801D247C5F32001C3377 /* CafeFeedRouter.swift in Sources */,
 				3957788B247AC79E00B8D164 /* Fonts.swift in Sources */,
 				39577891247ACA6700B8D164 /* Strings.swift in Sources */,
 				39577889247ABBAD00B8D164 /* Colors.swift in Sources */,
+				395855A0249947F1002210B9 /* Images.swift in Sources */,
+				3989D086249B52E90036119D /* PanelTransition.swift in Sources */,
+				3989D091249B56A30036119D /* PresentationController.swift in Sources */,
 				39577880247ABAD200B8D164 /* Labels.swift in Sources */,
+				3989D08C249B53DB0036119D /* TransitionDirection.swift in Sources */,
+				39F98EE6249A82BE00A4D96B /* CafeFeedInteractor.swift in Sources */,
 				39748001247C5777001C3377 /* ProfileViewController.swift in Sources */,
+				3989D083249B50F00036119D /* ChildViewController.swift in Sources */,
 				39ACDA072479BE5C0062E04F /* TutorialRouterProtocol.swift in Sources */,
+				3989D098249B60130036119D /* DismissAnimation.swift in Sources */,
+				39F98EDD249A21E100A4D96B /* UIViewController+Wrap.swift in Sources */,
 				39577884247ABB5600B8D164 /* PrimaryButton.swift in Sources */,
 				39748016247C5E48001C3377 /* CafeViewController.swift in Sources */,
 				39ACD9FA24799D540062E04F /* TutorialViewProtocols.swift in Sources */,
-				39748014247C5E3F001C3377 /* CafeView.swift in Sources */,
-				3974801B247C5EE7001C3377 /* CafeRouterProtocols.swift in Sources */,
+				39F98EE1249A7A1000A4D96B /* ErrorView.swift in Sources */,
+				3958559B24992C5C002210B9 /* TabBarAssembly.swift in Sources */,
+				39748014247C5E3F001C3377 /* CafeFeedView.swift in Sources */,
+				3958559E249937E7002210B9 /* RootAssembly.swift in Sources */,
+				39906D2724995893006BE63F /* UIImage+withColorAndSize.swift in Sources */,
+				3974801B247C5EE7001C3377 /* CafeFeedRouterProtocols.swift in Sources */,
+				3989D088249B53240036119D /* TransitionDriver.swift in Sources */,
 				39748005247C57BB001C3377 /* ProfileViewProtocols.swift in Sources */,
+				39F98EE4249A7E7500A4D96B /* CafeFeedInteractorProtocols.swift in Sources */,
+				395855A22499530F002210B9 /* Appearance.swift in Sources */,
 				39577886247ABB6700B8D164 /* Button.swift in Sources */,
 				39747FFE247C5763001C3377 /* ProfilePresenter.swift in Sources */,
 				1ECF4E1F24609F5A007174FE /* AppDelegate.swift in Sources */,
-				39748018247C5E76001C3377 /* CafePresenter.swift in Sources */,
+				39748018247C5E76001C3377 /* CafeFeedPresenter.swift in Sources */,
 				39748003247C5780001C3377 /* ProfileAssembly.swift in Sources */,
 				39ACD9F724799D2D0062E04F /* TutorialViewController.swift in Sources */,
-				3974800F247C5DCF001C3377 /* CafeAssembly.swift in Sources */,
+				39585595249926F7002210B9 /* RootViewController.swift in Sources */,
+				39CB09EF24844EB00049EB4F /* ScrollingCollectionViewFlowLayout.swift in Sources */,
+				3974800F247C5DCF001C3377 /* CafeFeedAssembly.swift in Sources */,
+				3989D09A249B6F5E0036119D /* UIVIewController+TransitionCoordinator.swift in Sources */,
+				3989D096249B5EA30036119D /* PresentAnimation.swift in Sources */,
+				39D64EEB2482963400E6838E /* CouponCollectionCell.swift in Sources */,
 				39748007247C5874001C3377 /* ProfileRouterProtocols.swift in Sources */,
 				39ACDA052479BE2F0062E04F /* TutorialRouter.swift in Sources */,
 				39ACDA032479BDCE0062E04F /* TutorialAssembly.swift in Sources */,
 				1ECF4E2124609F5A007174FE /* SceneDelegate.swift in Sources */,
 				39ACD9FC2479B77B0062E04F /* CommonPageViewController.swift in Sources */,
+				3958558E24992430002210B9 /* SplashViewController.swift in Sources */,
+				39906D29249958CA006BE63F /* UIImage+shadowImage.swift in Sources */,
+				39F98EE8249A956F00A4D96B /* ToastView.swift in Sources */,
+				3989D08E249B55BA0036119D /* CGPoint+Velocity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,14 +923,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MQJGJBX682;
 				INFOPLIST_FILE = "Coffe Pushkin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cheberda.timur.Coffe-Pushkin";
+				PRODUCT_BUNDLE_IDENTIFIER = cheberda.timur.coffe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -695,14 +944,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 9P8B87J42W;
+				DEVELOPMENT_TEAM = MQJGJBX682;
 				INFOPLIST_FILE = "Coffe Pushkin/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cheberda.timur.Coffe-Pushkin";
+				PRODUCT_BUNDLE_IDENTIFIER = cheberda.timur.coffe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

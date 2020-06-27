@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ProfileRouterInput: class {
-    func dismiss(onClose: (() -> ())?)
+    func dismiss(onClose: (() -> Void)?)
 }

@@ -8,5 +8,10 @@ target 'Coffe Pushkin' do
   # Pods for Coffe Pushkin
   pod 'SnapKit', '~> 5.0.0'
   pod 'Swinject'
+  pod 'Kingfisher', '~> 4.10'
+  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/RemoteConfig'
+  pod 'SwiftLint'
 
 end

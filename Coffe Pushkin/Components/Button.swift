@@ -8,12 +8,12 @@
 import UIKit
 
 /// Base class for buttons
-public class Button: UIButton {
+class Button: UIButton {
     
     private var _backgroundColorForNormalState: UIColor?
     private var _backgroundColorForDisabledState: UIColor?
-    
-    public var backgroundColorForNormalState: UIColor {
+
+    private var backgroundColorForNormalState: UIColor {
         set {
             _backgroundColorForNormalState = newValue
         }
@@ -21,8 +21,8 @@ public class Button: UIButton {
             return _backgroundColorForNormalState ?? .clear
         }
     }
-    
-    public var backgroundColorForDisabledState: UIColor {
+
+    private var backgroundColorForDisabledState: UIColor {
         set {
             _backgroundColorForDisabledState = newValue
         }
@@ -30,8 +30,8 @@ public class Button: UIButton {
             return _backgroundColorForDisabledState  ?? .clear
         }
     }
-    
-    public var titleLabelFont: UIFont? {
+
+    private var titleLabelFont: UIFont? {
         set {
             titleLabel?.font = newValue
         }
@@ -39,8 +39,8 @@ public class Button: UIButton {
             return titleLabel?.font
         }
     }
-    
-    override public var isEnabled: Bool {
+
+    override var isEnabled: Bool {
         didSet {
             super.isEnabled = isEnabled
             if isEnabled {
@@ -50,12 +50,12 @@ public class Button: UIButton {
             }
         }
     }
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         titleLabel?.minimumScaleFactor = 0.75
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         titleLabel?.minimumScaleFactor = 0.75

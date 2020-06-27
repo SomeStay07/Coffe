@@ -6,10 +6,34 @@
 
 // MARK: Tutorial
 
-"WELCOME_PAGE_TITLE" = "Добро пожаловать!";
-"LOCATION_PAGE_TITLE" = "Где мы?";
-"NOTIFICATION_PAGE_TITLE" = "Важные уведомления";
+"FIRST_TUTORIAL_TITLE" = "Кто мы?";
+"SECOND_TUTORIAL_TITLE" = "Что мы делаем?";
+"THIRD_TUTORIAL_TITLE" = "Где мы?";
+"FOURTH_TUTORIAL_TITLE" = "Начни свой день вкусно";
 
-"WELCOME_PAGE_DESCRIPTION" = "Coffe Pushkin уведомит вас об акциях и скидках, расскажет про историю кофе, поможет вам облегчить покупку кофе. Но сначала давайте его немного настроим.";
-"LOCATION_PAGE_DESCRIPTION" = "Очень часто мы устраиваем крупные акции на всю продукцию, разрешите вам узнать где мы, чтобы вы не упустили свою возможность.";
-"NOTIFICATION_PAGE_DESCRIPTION" = "Бывает, что у нас начались акции и скидки, а вы это можете пропустить. Для этого разрешите пуш-уведомления.";
+"FIRST_TUTORIAL_DESCRIPTION" = "Coffe Pushkin - сервис №1 в сфере кофе!";
+"SECOND_TUTORIAL_DESCRIPTION" = "Готовим и доставляем ароматный и вкусный кофе.";
+"THIRD_TUTORIAL_DESCRIPTION" = "Очень часто мы устраиваем крупные акции на всю продукцию, разрешите вам узнать где мы, чтобы вы не упустили свою возможность.";
+"FOURTH_TUTORIAL_DESCRIPTION" = "Выбери меню и начни свой день правильно уже сегодня!";
+
+
+// MARK: - TabBar
+"FEED_TAB" = "Лента";
+"PROFILE_TAB" = "Профиль";
+"ORDER_TAB" = "Корзина";
+"SETTINGS_TAB" = "Настройки";
+
+// MARK: - Error
+"EMPTY_DATA_TOAST_TITLE" = "Не удалось получить данные";
+"EMPTY_DATA_TOAST_DESCRIPTION" = "Вы используете приложение в режиме офлайн";
+"EMPTY_DATA_TITLE" = "Данные не получены";
+"EMPTY_DATA_DESCRIPTION" = "Что-то не так на стороне сервера";
+"NO_INTERNET_TITLE" = "Нет интернет соединения";
+"NO_INTERNET_DESCRIPTION" = "Проверьте ваше подключение к интернету";
+
+// MARK: - Common
+"UPDATE" = "Обновить";
+
+// Popup
+"POPUP_DRINKS_TITLE" = "Мы сделали для вас классные напитки!";
+"POPUP_DRINKS_DESCRIPTION" = "Только натуральные ингридиенты. Доступны к заказу каждый день.";
