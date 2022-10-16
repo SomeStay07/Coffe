@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1ECF4E1F24609F5A007174FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4E1E24609F5A007174FE /* AppDelegate.swift */; };
-		1ECF4E2124609F5A007174FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECF4E2024609F5A007174FE /* SceneDelegate.swift */; };
 		3931A76724857DB600CA7FFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3931A76624857DB600CA7FFD /* GoogleService-Info.plist */; };
 		39577880247ABAD200B8D164 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3957787F247ABAD200B8D164 /* Labels.swift */; };
 		39577884247ABB5600B8D164 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39577883247ABB5600B8D164 /* PrimaryButton.swift */; };
@@ -71,7 +70,6 @@
 		07A9BF5223AB0F76CAD1E8F3 /* Pods-Coffe Pushkin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffe Pushkin.debug.xcconfig"; path = "Target Support Files/Pods-Coffe Pushkin/Pods-Coffe Pushkin.debug.xcconfig"; sourceTree = "<group>"; };
 		1ECF4E1B24609F5A007174FE /* Coffe Pushkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe Pushkin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ECF4E1E24609F5A007174FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Coffe Pushkin/AppDelegate.swift"; sourceTree = "<group>"; };
-		1ECF4E2024609F5A007174FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "/Users/timur/Documents/Coffe Pushkin/Coffe Pushkin/SceneDelegate.swift"; sourceTree = "<absolute>"; };
 		3931A76624857DB600CA7FFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3957787F247ABAD200B8D164 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		39577883247ABB5600B8D164 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 		1ECF4E1D24609F5A007174FE /* Coffe Pushkin */ = {
 			isa = PBXGroup;
 			children = (
-				396E44CA249E656500E9F7EC /* Helpers */,
 				3989D080249B50D10036119D /* FluidTransition */,
 				396E44C9249E654D00E9F7EC /* Theme */,
 				39F98EDF249A7A0400A4D96B /* Custom Views */,
@@ -177,7 +174,6 @@
 				39ACDA13247A75DD0062E04F /* Enums */,
 				39ACD9F324799CF90062E04F /* Modules */,
 				1ECF4E1E24609F5A007174FE /* AppDelegate.swift */,
-				1ECF4E2024609F5A007174FE /* SceneDelegate.swift */,
 				39747FEF247C5455001C3377 /* Info.plist */,
 				3931A76624857DB600CA7FFD /* GoogleService-Info.plist */,
 			);
@@ -233,25 +229,9 @@
 			isa = PBXGroup;
 			children = (
 				3958559C249937DB002210B9 /* Assembly */,
-				39585596249927D9002210B9 /* View */,
 				39585594249926F7002210B9 /* RootViewController.swift */,
 			);
 			path = RootModule;
-			sourceTree = "<group>";
-		};
-		39585596249927D9002210B9 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				39585597249927EE002210B9 /* Protocols */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		39585597249927EE002210B9 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		3958559C249937DB002210B9 /* Assembly */ = {
@@ -269,13 +249,6 @@
 				395855A12499530F002210B9 /* Appearance.swift */,
 			);
 			path = Theme;
-			sourceTree = "<group>";
-		};
-		396E44CA249E656500E9F7EC /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		39747FF3247C56E4001C3377 /* Profile */ = {
@@ -788,7 +761,6 @@
 				39748007247C5874001C3377 /* ProfileRouterProtocols.swift in Sources */,
 				39ACDA052479BE2F0062E04F /* TutorialRouter.swift in Sources */,
 				39ACDA032479BDCE0062E04F /* TutorialAssembly.swift in Sources */,
-				1ECF4E2124609F5A007174FE /* SceneDelegate.swift in Sources */,
 				39ACD9FC2479B77B0062E04F /* CommonPageViewController.swift in Sources */,
 				3958558E24992430002210B9 /* SplashViewController.swift in Sources */,
 				39906D29249958CA006BE63F /* UIImage+shadowImage.swift in Sources */,
